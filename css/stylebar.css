@@ -152,7 +152,7 @@ body {
 }
 .progress-bar:before {
   bottom: 0;
-  background: url("../img/stripes.png") 0 0 repeat;
+  background: url("../images/stripes.png") 0 0 repeat;
   border-radius: 4px 4px 0 0;
 }
 .progress-bar:after {
@@ -256,7 +256,7 @@ body {
 }
 .progress-bar2:before {
   bottom: 0;
-  background: url("../img/stripes.png") 0 0 repeat;
+  background: url("../images/stripes.png") 0 0 repeat;
   border-radius: 4px 4px 0 0;
 }
 .progress-bar2:after {
@@ -341,7 +341,7 @@ body {
 }
 .progress-bar3:before {
   bottom: 0;
-  background: url("../img/stripes.png") 0 0 repeat;
+  background: url("../images/stripes.png") 0 0 repeat;
   border-radius: 4px 4px 0 0;
 }
 .progress-bar3:after {
@@ -426,7 +426,7 @@ body {
 }
 .progress-bar4:before {
   bottom: 0;
-  background: url("../img/stripes.png") 0 0 repeat;
+  background: url("../images/stripes.png") 0 0 repeat;
   border-radius: 4px 4px 0 0;
 }
 .progress-bar4:after {
@@ -511,7 +511,7 @@ body {
 }
 .progress-bar5:before {
   bottom: 0;
-  background: url("../img/stripes.png") 0 0 repeat;
+  background: url("../images/stripes.png") 0 0 repeat;
   border-radius: 4px 4px 0 0;
 }
 .progress-bar5:after {
