@@ -145,7 +145,8 @@ jQuery(document).ready(function($) {
             var post_data = {
                 'userName': user_name,
                 'userEmail': user_email,
-                'userMessage': user_message
+                'userMessage': user_message,
+		'csrfmiddlewaretoken': '{{ csrf_token }}'
             };
             var output;
             //Ajax post data to server
