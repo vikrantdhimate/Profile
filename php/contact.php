@@ -1,6 +1,6 @@
 <?php
  
-if(isset($_POST['user_email'])) {
+if(isset($_POST['userName'])) {
  
      
  
@@ -34,11 +34,11 @@ if(isset($_POST['user_email'])) {
  
     // validation expected data exists
  
-    if(!isset($_POST['user_name']) ||
+    if(!isset($_POST['userName']) ||
  
-        !isset($_POST['user_email']) ||
+        !isset($_POST['userEmail']) ||
  
-        !isset($_POST['user_message'])) {
+        !isset($_POST['userMessage'])) {
  
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
  
@@ -46,11 +46,11 @@ if(isset($_POST['user_email'])) {
  
      
  
-    $user_name = $_POST['user_name']; // required
+    $userName = $_POST['userName']; // required
  
-    $email_from = $_POST['user_email']; // required
+    $userEmail = $_POST['userEmail']; // required
  
-    $user_message = $_POST['user_message']; // required
+    $userMessage = $_POST['userMessage']; // required
  
      
  
@@ -58,24 +58,24 @@ if(isset($_POST['user_email'])) {
  
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
-  if(!preg_match($email_exp,$email_from)) {
+  if(!preg_match($email_exp,$userEmail)) {
  
-    $error_message .= 'The user_email Address you entered does not appear to be valid.<br />';
+    $error_message .= 'The userEmail Address you entered does not appear to be valid.<br />';
  
   }
  
     $string_exp = "/^[A-Za-z .'-]+$/";
  
-  if(!preg_match($string_exp,$user_name)) {
+  if(!preg_match($string_exp,$userName)) {
  
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+    $error_message .= 'The userName you entered does not appear to be valid.<br />';
  
   }
 
  
-  if(strlen($user_message) < 2) {
+  if(strlen($userMessage) < 2) {
  
-    $error_message .= 'The user_message you entered do not appear to be valid.<br />';
+    $error_message .= 'The userMessage you entered do not appear to be valid.<br />';
  
   }
  
@@ -99,17 +99,17 @@ if(isset($_POST['user_email'])) {
  
      
  
-    $email_message .= "First Name: ".clean_string($user_name)."\n";
+    $email_message .= "userName: ".clean_string($userName)."\n";
  
-    $email_message .= "user_email: ".clean_string($email_from)."\n";
+    $email_message .= "userEmail: ".clean_string($userEmail)."\n";
  
-    $email_message .= "user_message: ".clean_string($user_message)."\n";
- 
-     
+    $email_message .= "userMessage: ".clean_string($userMessage)."\n";
  
      
  
-// create user_email headers
+     
+ 
+// create userEmail headers
  
 $headers = 'From: '.$email_from."\r\n".
  
