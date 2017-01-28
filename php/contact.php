@@ -27,7 +27,7 @@ if(isset($_POST['userName'])) {
         echo "Please go back and fix these errors.<br /><br />";
  
         die();
- 
+
     }
  
      
@@ -98,7 +98,7 @@ if(isset($_POST['userName'])) {
     }
  
      
- 
+    $email_from = "userName: ".clean_string($userName)."\n"; 
     $email_message .= "userName: ".clean_string($userName)."\n";
  
     $email_message .= "userEmail: ".clean_string($userEmail)."\n";
@@ -112,8 +112,8 @@ if(isset($_POST['userName'])) {
 // create userEmail headers
  
 $headers = 'From: '.$email_from."\r\n".
- 
-'Reply-To: '.$email_from."\r\n" .
+
+'Reply-To: '.$email_to."\r\n" .
  
 'X-Mailer: PHP/' . phpversion();
  

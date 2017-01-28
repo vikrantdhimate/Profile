@@ -373,7 +373,7 @@ a.hs-totop-link {
     text-align: center;
     font-size: 14px;
     margin: 0 2px;
-    background: #2b303b;
+    background: #0e52e7;
     display: inline-block;
     -webkit-transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
@@ -401,9 +401,9 @@ a.hs-totop-link {
     height: 50px;
     position: absolute;
     left: -225px;
-    bottom: 235px;
+    bottom: 250px;
     line-height: 50px;
-    text-align: left;
+    text-align: center;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
