@@ -3322,9 +3322,9 @@ screen and (max-height: 300px) {
     }
     .hs-menu {
         position: relative;
-        width: 100%;
+        width: 92%;
         height: 320px;
-        left: 0;
+        left: 18;
     }
     .hs-headline {
         padding: 25px 0 0 0;
