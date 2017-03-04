@@ -3324,7 +3324,7 @@ screen and (max-height: 300px) {
         position: relative;
         width: 92%;
         height: 320px;
-        left: 18;
+        left: 18px;
     }
     .hs-headline {
         padding: 25px 0 0 0;
